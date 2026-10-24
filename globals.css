@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Space Grotesk", "Manrope", ui-sans-serif, sans-serif;
+
+  --color-canvas: #f4f3ec;
+  --color-surface: #fdfcf8;
+  --color-ink: #1e2a25;
+  --color-ink-soft: #5a6a62;
+  --color-line: #e2e0d3;
+
+  --color-brand-50: #eef6f1;
+  --color-brand-100: #d8ebde;
+  --color-brand-200: #b1d6c1;
+  --color-brand-300: #80ba9e;
+  --color-brand-400: #4f9a78;
+  --color-brand-500: #2e7d5b;
+  --color-brand-600: #1e6349;
+  --color-brand-700: #184f3a;
+  --color-brand-800: #153f30;
+  --color-brand-900: #112f24;
+  --color-brand-950: #0a1f18;
+
+  --color-accent-50: #fdf6e8;
+  --color-accent-100: #f9e9c8;
+  --color-accent-200: #f2d394;
+  --color-accent-300: #ecbc63;
+  --color-accent-400: #e3a13c;
+  --color-accent-500: #d4861f;
+  --color-accent-600: #b06a15;
+  --color-accent-700: #8a5015;
+  --color-accent-800: #6f4017;
+
+  --shadow-card: 0 1px 2px rgb(30 42 37 / 0.05), 0 4px 16px -6px rgb(30 42 37 / 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-feature-settings: "ss01";
+}
+
+::selection {
+  background: var(--color-brand-200);
+  color: var(--color-brand-900);
+}
+
+/* Scrollbar halus */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c8c6b8 transparent;
+}
